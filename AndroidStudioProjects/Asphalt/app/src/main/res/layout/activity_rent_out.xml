@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".RentOutActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="your address"
+        android:inputType="textPostalAddress"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="from"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="to"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="number of vehicles"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="143dp"
+        android:layout_height="85dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="394dp"
+        tools:text="submit" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="price per hour"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="310dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -12,11 +12,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Button rentOutButton = (Button)findViewById(R.id.rentOutButton);
         rentOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), RentOutActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button reserveButton = (Button)findViewById(R.id.ReserveButton);
+        reserveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), ReserveActivity.class);
                 startActivity(startIntent);
             }
         });
