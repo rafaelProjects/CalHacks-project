@@ -1,4 +1,4 @@
-package com.example.stanleyou.assfault;
+package com.example.stanleyou.asphalt;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,17 +12,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*
-        Button rentOutActivityButton = (Button)findViewById(R.id.rentOutActivity);
-        rentOutActivityButton.setOnClickListener(new View.OnClickListener() {
+        Button rentOutButton = (Button)findViewById(R.id.rentOutButton);
+        rentOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), RentOutActivity.class);
                 startActivity(startIntent);
             }
-
         });
-        */
 
     }
 }

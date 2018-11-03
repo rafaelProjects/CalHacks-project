@@ -7,6 +7,7 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/editText2"
             android:layout_width="wrap_content"
@@ -15,11 +16,20 @@
         android:hint="Enter Address"
         android:inputType="textPostalAddress"
         app:layout_constraintBottom_toTopOf="@+id/editText3"
+=======
+    <Button
+        android:id="@+id/rentOutActivity"
+        android:layout_width="194dp"
+        android:layout_height="45dp"
+        android:text="Rent Out"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+>>>>>>> a0f94b823ef4eed752f82c53ccfd7fb98c418ea2
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
@@ -46,15 +56,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
+=======
+>>>>>>> a0f94b823ef4eed752f82c53ccfd7fb98c418ea2
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
+        android:id="@+id/button2"
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:text="Reserve"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
-
+        app:layout_constraintTop_toBottomOf="@+id/rentOutActivity" />
 </android.support.constraint.ConstraintLayout>
