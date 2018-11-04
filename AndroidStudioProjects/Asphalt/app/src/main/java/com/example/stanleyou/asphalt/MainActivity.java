@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), ReserveActivity.class);
                 startActivity(startIntent);
+            }
+        });
+
+        Button submitReserveButton = (Button)findViewById(R.id.rentOutSubmitButton);
+        submitReserveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText address = (EditText) findViewById(R.id.addressInput);
+                EditText timeFrom = (EditText) findViewById(R.id.timeFromInput);
+                EditText timeTo = (EditText) findViewById(R.id.timeToInput);
+                EditText numberOfParkingSpots = (EditText) findViewById(R.id.numberOfParkingSpotsInput);
+
+                String addressString = address.getText().toString();
+                //String  = address.getText().toString();
             }
         });
 

@@ -8,57 +8,57 @@
     tools:context=".RentOutActivity">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/addressInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="your address"
         android:inputType="textPostalAddress"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintBottom_toTopOf="@+id/timeFromInput"
+        app:layout_constraintEnd_toEndOf="@+id/timeFromInput"
+        app:layout_constraintStart_toStartOf="@+id/timeFromInput"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/timeFromInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="time from"
         android:inputType="time"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintBottom_toTopOf="@+id/timeToInput"
+        app:layout_constraintEnd_toEndOf="@+id/timeToInput"
+        app:layout_constraintStart_toStartOf="@+id/timeToInput"
+        app:layout_constraintTop_toBottomOf="@+id/addressInput" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/timeToInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="time to "
         android:inputType="time"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
-        app:layout_constraintEnd_toEndOf="@+id/editText5"
-        app:layout_constraintStart_toStartOf="@+id/editText5"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintBottom_toTopOf="@+id/numberOfParkingSpotsInput"
+        app:layout_constraintEnd_toEndOf="@+id/numberOfParkingSpotsInput"
+        app:layout_constraintStart_toStartOf="@+id/numberOfParkingSpotsInput"
+        app:layout_constraintTop_toBottomOf="@+id/timeFromInput" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/numberOfParkingSpotsInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="number of parking spots"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/rentOutSubmitButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/timeToInput" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/rentOutSubmitButton"
         android:layout_width="143dp"
         android:layout_height="85dp"
         android:text="Submit"
